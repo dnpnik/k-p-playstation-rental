@@ -81,6 +81,8 @@ document.querySelectorAll('.reveal').forEach((element) => revealObserver.observe
 
 const reelVideo = document.querySelector('[data-reel-video]');
 const videoToggle = document.querySelector('[data-video-toggle]');
+const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+let reelUserPaused = false;
 
 const syncVideoControl = () => {
   if (!reelVideo || !videoToggle) return;
@@ -91,17 +93,29 @@ const syncVideoControl = () => {
 };
 
 videoToggle?.addEventListener('click', () => {
-  if (reelVideo.paused) reelVideo.play().catch(syncVideoControl);
-  else reelVideo.pause();
+  if (reelVideo.paused) {
+    reelUserPaused = false;
+    reelVideo.play().catch(syncVideoControl);
+  } else {
+    reelUserPaused = true;
+    reelVideo.pause();
+  }
 });
 
 reelVideo?.addEventListener('play', syncVideoControl);
 reelVideo?.addEventListener('pause', syncVideoControl);
 
-if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+if (reducedMotion) {
   reelVideo?.pause();
-} else {
-  reelVideo?.play().then(syncVideoControl).catch(syncVideoControl);
+} else if (reelVideo) {
+  const reelObserver = new IntersectionObserver(([entry]) => {
+    if (entry.isIntersecting && !reelUserPaused) {
+      reelVideo.play().catch(syncVideoControl);
+    } else if (!entry.isIntersecting) {
+      reelVideo.pause();
+    }
+  }, { threshold: 0.24 });
+  reelObserver.observe(reelVideo);
 }
 syncVideoControl();
 
