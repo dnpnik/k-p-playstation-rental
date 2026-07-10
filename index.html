@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="K&P — аренда PlayStation 5 в Омске с доставкой в удобное время."
+    />
+    <title>K&P — аренда PlayStation 5 в Омске</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-noise" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="K&P — на главную">
+        <span class="brand-mark"><i></i><i></i><i></i><i></i></span>
+        <span>K&P</span>
+      </a>
+      <nav class="main-nav" aria-label="Главная навигация">
+        <a href="#sets">Комплекты</a>
+        <a href="#how-it-works">Как это работает</a>
+        <a href="#faq">Вопросы</a>
+      </nav>
+      <button class="header-action" type="button" data-open-modal>Выбрать комплект <span>↗</span></button>
+    </header>
+
+    <main id="top">
+      <section class="hero section-shell">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> Омск · доставим сегодня</p>
+          <h1>Вечер, который<br /><em>хочется</em> повторить</h1>
+          <p class="hero-lead">Аренда PlayStation&nbsp;5 для дома, вечеринок и больших игровых выходных. Соберём комплект под ваш план.</p>
+          <div class="hero-actions">
+            <button class="button button-primary" type="button" data-open-modal>Арендовать PS5 <span>→</span></button>
+            <a class="button button-ghost" href="#sets">Смотреть комплекты</a>
+          </div>
+          <dl class="hero-facts">
+            <div><dt>60 мин.</dt><dd>средняя доставка</dd></div>
+            <div><dt>4.9 / 5</dt><dd>оценка клиентов</dd></div>
+            <div><dt>7 дней</dt><dd>в неделю на связи</dd></div>
+          </dl>
+        </div>
+
+        <div class="hero-art" aria-label="Игровая консоль и контроллер">
+          <div class="orb orb-one"></div>
+          <div class="orb orb-two"></div>
+          <div class="hero-note note-top"><span>01</span> Новая консоль<br />в идеальном состоянии</div>
+          <div class="hero-note note-bottom"><span>02</span> 2 джойстика<br />уже в комплекте</div>
+          <div class="console" aria-hidden="true">
+            <div class="console-wing wing-left"></div>
+            <div class="console-core"></div>
+            <div class="console-wing wing-right"></div>
+            <div class="console-base"></div>
+            <div class="console-light"></div>
+          </div>
+          <div class="controller" aria-hidden="true">
+            <div class="controller-grip grip-left"></div>
+            <div class="controller-grip grip-right"></div>
+            <div class="controller-body"></div>
+            <span class="controller-pad">＋</span>
+            <span class="controller-stick stick-left"></span>
+            <span class="controller-stick stick-right"></span>
+            <span class="controller-buttons">△<br />○</span>
+          </div>
+          <div class="art-caption"><span>Собрано для игры</span><b>PS5</b></div>
+        </div>
+      </section>
+
+      <section class="trust-strip section-shell" aria-label="Преимущества сервиса">
+        <p>Без залога</p><span></span><p>Привезём и подключим</p><span></span><p>Игры уже установлены</p><span></span><p>Поддержка весь вечер</p>
+      </section>
+
+      <section class="sets section-shell" id="sets">
+        <div class="section-heading">
+          <div><p class="eyebrow">Комплекты</p><h2>Выберите ваш<br /><em>формат игры</em></h2></div>
+          <p>В каждом комплекте — консоль, два беспроводных контроллера и всё необходимое для старта.</p>
+        </div>
+        <div class="set-grid">
+          <article class="set-card set-card-featured">
+            <span class="card-number">01</span>
+            <p class="set-kicker">Для уютного вечера</p>
+            <h3>Базовый</h3>
+            <p class="set-copy">PS5, два джойстика и подборка хитов для двоих.</p>
+            <div class="set-footer"><strong>от 1 490 ₽ <small>/ сутки</small></strong><button type="button" aria-label="Выбрать базовый комплект" data-open-modal>→</button></div>
+            <div class="mini-console basic-console" aria-hidden="true"><i></i><b></b></div>
+          </article>
+          <article class="set-card dark-card">
+            <span class="card-number">02</span>
+            <p class="set-kicker">Для компании</p>
+            <h3>Вечеринка</h3>
+            <p class="set-copy">Четыре джойстика, экран и игры, в которые хочется играть вместе.</p>
+            <div class="set-footer"><strong>от 2 490 ₽ <small>/ сутки</small></strong><button type="button" aria-label="Выбрать комплект для вечеринки" data-open-modal>→</button></div>
+            <div class="mini-controller" aria-hidden="true"><i></i><i></i><b></b></div>
+          </article>
+          <article class="set-card wide-card">
+            <span class="card-number">03</span>
+            <p class="set-kicker">На выходные</p>
+            <h3>Максимум</h3>
+            <p class="set-copy">Большой экран, PS5 и четыре джойстика — чтобы не думать о деталях.</p>
+            <div class="set-footer"><strong>от 3 490 ₽ <small>/ сутки</small></strong><button type="button" aria-label="Выбрать максимальный комплект" data-open-modal>→</button></div>
+            <div class="screen-glow" aria-hidden="true"></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="experience">
+        <div class="section-shell experience-inner">
+          <div class="experience-art" aria-hidden="true">
+            <div class="experience-rings"></div>
+            <div class="experience-card card-back">EA<br /><small>SPORTS</small></div>
+            <div class="experience-card card-front">FC<br /><small>24</small></div>
+            <div class="floating-ball"></div>
+          </div>
+          <div class="experience-copy">
+            <p class="eyebrow">Можно просто начать</p>
+            <h2>Игры уже ждут<br />вашего <em>первого хода</em></h2>
+            <p>Настроим консоль, расскажем, что включить, и оставим контакты поддержки. Никакой долгой подготовки — только игра.</p>
+            <ul class="check-list">
+              <li>Установленные популярные игры</li>
+              <li>Проверенное оборудование</li>
+              <li>Подсказки для первого запуска</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="steps section-shell" id="how-it-works">
+        <div class="section-heading compact-heading"><div><p class="eyebrow">Как это работает</p><h2>От выбора<br />до <em>старта</em></h2></div></div>
+        <ol class="steps-list">
+          <li><span>01</span><div><h3>Оставляете заявку</h3><p>Выбираете комплект и удобное время доставки.</p></div><b>↗</b></li>
+          <li><span>02</span><div><h3>Мы всё готовим</h3><p>Проверяем технику и собираем игры под ваш вечер.</p></div><b>↗</b></li>
+          <li><span>03</span><div><h3>Играете</h3><p>Привозим, подключаем и остаёмся на связи.</p></div><b>↗</b></li>
+        </ol>
+      </section>
+
+      <section class="quote-section section-shell">
+        <div class="quote-mark">“</div>
+        <blockquote>Привезли быстрее, чем успели заказать пиццу. Подключили, показали игры — вечер получился именно таким, как планировали.</blockquote>
+        <div class="quote-author"><span class="avatar">А</span><div><strong>Анна В.</strong><small>Аренда «Вечеринка»</small></div><span class="quote-rating">★★★★★</span></div>
+      </section>
+
+      <section class="faq section-shell" id="faq">
+        <div class="section-heading"><div><p class="eyebrow">Вопросы</p><h2>Всё легко<br />и <em>прозрачно</em></h2></div><p>Не нашли ответ? Оставьте заявку — поможем подобрать оптимальный комплект.</p></div>
+        <div class="faq-list">
+          <details open><summary>Что входит в аренду?<span>+</span></summary><p>Консоль PS5, два беспроводных контроллера, кабели для подключения и подборка игр. Для некоторых комплектов добавляются экран и дополнительные контроллеры.</p></details>
+          <details><summary>Нужен ли залог?<span>+</span></summary><p>Условия аренды подтверждаем при оформлении заявки: заранее сообщаем полную стоимость и всё, что потребуется для получения комплекта.</p></details>
+          <details><summary>Можно ли заказать на несколько дней?<span>+</span></summary><p>Да. Укажите даты в заявке, и мы подберём выгодный вариант для выходных или длительного проката.</p></details>
+          <details><summary>Поможете с подключением?<span>+</span></summary><p>Да, доставим комплект, подключим его и проверим, что всё готово к игре.</p></details>
+        </div>
+      </section>
+
+      <section class="final-cta section-shell">
+        <div class="final-cta-inner">
+          <p class="eyebrow">Сегодня — лучший повод</p>
+          <h2>Ваш игровой<br /><em>вечер начинается</em></h2>
+          <button class="button button-light" type="button" data-open-modal>Выбрать комплект <span>→</span></button>
+          <div class="cta-sphere" aria-hidden="true"></div>
+          <div class="cta-controller" aria-hidden="true"><i></i><i></i><b></b></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer section-shell">
+      <a class="brand" href="#top"><span class="brand-mark"><i></i><i></i><i></i><i></i></span><span>K&P</span></a>
+      <p>Аренда игровых консолей в Омске</p>
+      <a href="#top">Наверх ↑</a>
+    </footer>
+
+    <dialog class="booking-modal" aria-labelledby="modal-title">
+      <button class="modal-close" type="button" aria-label="Закрыть форму" data-close-modal>×</button>
+      <p class="eyebrow">Заявка на аренду</p>
+      <h2 id="modal-title">Подберём комплект<br /><em>под ваш вечер</em></h2>
+      <form id="booking-form">
+        <label>Ваше имя<input name="name" autocomplete="name" placeholder="Как к вам обращаться" required /></label>
+        <label>Телефон<input name="phone" inputmode="tel" autocomplete="tel" placeholder="+7 (___) ___-__-__" required /></label>
+        <label>Комплект<select name="set"><option>Базовый</option><option>Вечеринка</option><option>Максимум</option></select></label>
+        <button class="button button-primary" type="submit">Отправить заявку <span>→</span></button>
+      </form>
+      <p class="form-note">Нажимая кнопку, вы соглашаетесь на обработку данных для связи по заявке.</p>
+    </dialog>
+    <div class="toast" role="status" aria-live="polite">Заявка принята. Скоро свяжемся, чтобы уточнить детали.</div>
+    <script src="script.js"></script>
+  </body>
+</html>
