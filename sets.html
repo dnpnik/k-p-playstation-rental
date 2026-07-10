@@ -18,13 +18,13 @@
     <header class="site-header shell" data-header>
       <a class="brand" href="index.html" aria-label="K&P — на главную"><span class="brand-symbol"><i></i><i></i><i></i><i></i></span><span class="brand-name">K&P</span><small>game rental</small></a>
       <nav class="main-nav" aria-label="Главная навигация"><a href="index.html" data-nav="home">Главная</a><a href="sets.html" data-nav="sets">Комплекты</a><a href="service.html" data-nav="service">Сервис</a><a href="contacts.html" data-nav="contacts">Контакты</a></nav><button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" data-menu-toggle><i></i><i></i></button>
-      <button class="nav-cta" type="button" data-open-modal><span>Забронировать</span><b>↗</b></button>
+      <button class="nav-cta" type="button" data-open-modal aria-label="Открыть форму бронирования"><span>Забронировать</span><b aria-hidden="true">↗</b></button>
     </header>
 
     <main id="content">
       <section class="inner-hero shell">
-        <div class="inner-hero-copy reveal"><p class="eyebrow"><span>02</span> Комплекты</p><h1>Ваш формат.<br /><em>Ваши правила.</em></h1><p>От спокойного вечера вдвоём до игровых выходных большой компанией. Всё оборудование приезжает готовым к старту.</p></div>
-        <div class="inner-hero-art sets-hero-art reveal reveal-delay" aria-hidden="true"><span class="giant-number">03</span><div class="hero-pads"><i></i><i></i><b></b><em></em></div><div class="art-stamp">CHOOSE<br /><strong>YOUR MODE</strong></div></div>
+        <div class="inner-hero-copy reveal"><p class="eyebrow"><span>02</span> Комплекты</p><h1>Ваш формат.<br /><em>Ваши правила.</em></h1><p>От спокойного вечера вдвоём до игровых выходных большой компанией. Всё оборудование приезжает готовым к старту.</p><a class="button button-accent" href="#sets-options">Смотреть варианты <span>↓</span></a></div>
+        <div class="inner-hero-art inner-photo-art sets-hero-art reveal reveal-delay" data-glow data-tilt><img src="assets/media/hero-console-v2.webp" alt="Игровая консоль и контроллер в студийном синем свете" fetchpriority="high" decoding="async" /><div class="inner-photo-shade" aria-hidden="true"></div><div class="art-stamp">CHOOSE<br /><strong>YOUR MODE</strong></div><div class="inner-photo-meta"><span>03 / SETS</span><b>READY TO PLAY</b></div></div>
       </section>
 
       <section class="photo-banner shell reveal parallax-media" data-parallax data-glow>
@@ -34,23 +34,28 @@
         <span class="photo-banner-mark">K&P / EQUIPMENT</span>
       </section>
 
-      <section class="shell inner-section">
+      <section class="shell inner-section" id="sets-options">
         <div class="package-grid package-grid-detail">
-          <article class="package-card package-white reveal"><div class="package-top"><span class="package-index">01</span><span class="package-tag">для двоих</span></div><div class="package-visual mini-visual-one"><div class="mini-ps"><i></i><b></b><em></em></div></div><div class="package-content"><p>Спокойный вечер дома</p><h3>Базовый</h3><ul><li>PlayStation 5</li><li>2 контроллера</li><li>Подборка игр</li></ul><button type="button" data-open-modal data-package="Базовый">Выбрать <span>→</span></button></div></article>
-          <article class="package-card package-blue reveal reveal-delay"><div class="package-top"><span class="package-index">02</span><span class="package-tag">выбор компании</span></div><div class="package-visual mini-visual-two"><div class="mini-pad"><i></i><i></i><b></b><em></em></div></div><div class="package-content"><p>Для большой компании</p><h3>Вечеринка</h3><ul><li>PlayStation 5</li><li>4 контроллера</li><li>Игры для компании</li></ul><button type="button" data-open-modal data-package="Вечеринка">Выбрать <span>→</span></button></div></article>
-          <article class="package-card package-dark reveal reveal-delay-two"><div class="package-top"><span class="package-index">03</span><span class="package-tag">полный комплект</span></div><div class="package-visual mini-visual-three"><span class="screen-one"></span><span class="screen-two"></span><span class="screen-glow"></span></div><div class="package-content"><p>Всё для игровых выходных</p><h3>Максимум</h3><ul><li>Консоль и экран</li><li>4 контроллера</li><li>Расширенная подборка</li></ul><button type="button" data-open-modal data-package="Максимум">Выбрать <span>→</span></button></div></article>
+          <article class="package-card package-white reveal" data-glow data-tilt><div class="package-top"><span class="package-index">01</span><span class="package-tag">для двоих</span></div><div class="package-visual package-media"><img src="assets/media/hero-console-v2.webp" alt="Консоль и контроллер для базового комплекта" loading="lazy" decoding="async" /><span>DUO / READY</span></div><div class="package-content"><p>Спокойный вечер дома</p><h3>Базовый</h3><ul><li>PlayStation 5</li><li>2 контроллера</li><li>Подборка игр</li></ul><button type="button" data-open-modal data-package="Базовый">Выбрать <span>→</span></button></div></article>
+          <article class="package-card package-blue reveal reveal-delay" data-glow data-tilt><div class="package-top"><span class="package-index">02</span><span class="package-tag">выбор компании</span></div><div class="package-visual package-media"><img src="assets/media/controllers.webp" alt="Игроки с контроллерами для комплекта Вечеринка" loading="lazy" decoding="async" /><span>PARTY / FOUR</span></div><div class="package-content"><p>Для большой компании</p><h3>Вечеринка</h3><ul><li>PlayStation 5</li><li>4 контроллера</li><li>Игры для компании</li></ul><button type="button" data-open-modal data-package="Вечеринка">Выбрать <span>→</span></button></div></article>
+          <article class="package-card package-dark reveal reveal-delay-two" data-glow data-tilt><div class="package-top"><span class="package-index">03</span><span class="package-tag">полный комплект</span></div><div class="package-visual package-media"><img src="assets/media/game-night.webp" alt="Игровой вечер большой компании для комплекта Максимум" loading="lazy" decoding="async" /><span>MAX / WEEKEND</span></div><div class="package-content"><p>Всё для игровых выходных</p><h3>Максимум</h3><ul><li>Консоль и экран</li><li>4 контроллера</li><li>Расширенная подборка</li></ul><button type="button" data-open-modal data-package="Максимум">Выбрать <span>→</span></button></div></article>
         </div>
       </section>
 
       <section class="comparison shell inner-section">
         <header class="section-heading reveal"><div><p class="eyebrow"><span>+</span> Сравнение</p><h2>Всё видно<br /><em>с первого взгляда</em></h2></div><p>Финальный состав и доступность оборудования подтверждаются после заявки.</p></header>
-        <div class="comparison-table reveal" role="table" aria-label="Сравнение комплектов">
-          <div class="comparison-row comparison-head" role="row"><span role="columnheader">В комплекте</span><b role="columnheader">Базовый</b><b role="columnheader">Вечеринка</b><b role="columnheader">Максимум</b></div>
-          <div class="comparison-row" role="row"><span role="cell">PlayStation 5</span><b>✓</b><b>✓</b><b>✓</b></div>
-          <div class="comparison-row" role="row"><span role="cell">Контроллеры</span><b>2</b><b>4</b><b>4</b></div>
-          <div class="comparison-row" role="row"><span role="cell">Игры для компании</span><b>—</b><b>✓</b><b>✓</b></div>
-          <div class="comparison-row" role="row"><span role="cell">Экран</span><b>—</b><b>—</b><b>✓</b></div>
-          <div class="comparison-row comparison-actions" role="row"><span></span><button data-open-modal data-package="Базовый">Выбрать</button><button data-open-modal data-package="Вечеринка">Выбрать</button><button data-open-modal data-package="Максимум">Выбрать</button></div>
+        <div class="comparison-scroll reveal">
+          <table class="comparison-table">
+            <caption class="sr-only">Сравнение комплектов аренды</caption>
+            <thead><tr><th scope="col">В комплекте</th><th scope="col">Базовый</th><th scope="col">Вечеринка</th><th scope="col">Максимум</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">PlayStation 5</th><td>✓</td><td>✓</td><td>✓</td></tr>
+              <tr><th scope="row">Контроллеры</th><td>2</td><td>4</td><td>4</td></tr>
+              <tr><th scope="row">Игры для компании</th><td>—</td><td>✓</td><td>✓</td></tr>
+              <tr><th scope="row">Экран</th><td>—</td><td>—</td><td>✓</td></tr>
+            </tbody>
+            <tfoot><tr><td></td><td><button data-open-modal data-package="Базовый">Выбрать</button></td><td><button data-open-modal data-package="Вечеринка">Выбрать</button></td><td><button data-open-modal data-package="Максимум">Выбрать</button></td></tr></tfoot>
+          </table>
         </div>
       </section>
 
@@ -59,6 +64,6 @@
 
     <footer class="site-footer shell"><div class="footer-brand"><a class="brand" href="index.html"><span class="brand-symbol"><i></i><i></i><i></i><i></i></span><span class="brand-name">K&P</span></a><p>Аренда игровых консолей в Омске</p></div><nav aria-label="Навигация в подвале"><a href="index.html">Главная</a><a href="sets.html">Комплекты</a><a href="service.html">Сервис</a><a href="contacts.html">Контакты</a></nav><a class="to-top" href="#content">Наверх ↑</a><p class="footer-note">Условия, стоимость и наличие подтверждаются при оформлении заявки.</p></footer>
     <dialog class="booking-modal" aria-labelledby="booking-title"><button class="modal-close" type="button" aria-label="Закрыть форму" data-close-modal>×</button><div class="modal-index">K&P / BOOKING</div><p class="eyebrow"><span>01</span> Заявка на аренду</p><h2 id="booking-title">Ваш вечер<br /><em>начинается здесь</em></h2><form id="booking-form"><div class="form-row"><label><span>Ваше имя</span><input name="name" autocomplete="name" placeholder="Как к вам обращаться" required /></label><label><span>Телефон</span><input name="phone" inputmode="tel" autocomplete="tel" placeholder="+7 (___) ___-__-__" required /></label></div><div class="form-row"><label><span>Комплект</span><select name="package" id="modal-package"><option>Базовый</option><option>Вечеринка</option><option>Максимум</option></select></label><label><span>Срок</span><select name="duration" id="modal-duration"><option>1 день</option><option>2 дня</option><option>Все выходные</option></select></label></div><label><span>Комментарий</span><textarea name="comment" rows="3" placeholder="Дата, район или пожелания к играм"></textarea></label><button class="button button-accent" type="submit">Оставить заявку <span>→</span></button></form><p class="form-note">Форма не отправляет данные без подключённого канала приёма заявок.</p></dialog>
-    <div class="toast" role="status" aria-live="polite"><span>✓</span><p><b>Форма работает</b><small>Для реальных заявок нужно подключить канал отправки.</small></p></div><script src="script.js"></script>
+    <div class="toast" role="status" aria-live="polite"><span>i</span><p><b>Демо-форма</b><small>Данные сохранены в форме, но пока не отправлены.</small></p></div><script src="script.js"></script>
   </body>
 </html>

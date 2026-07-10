@@ -1,0 +1,21 @@
+{
+  "runId": "kp-hero-v2",
+  "workflow": "generative-polish",
+  "createdAt": "2026-07-11",
+  "status": "selected-and-integrated",
+  "builtInImageGen": true,
+  "sourceLayer": "source/hero-console-v2-source.png",
+  "finalExport": "final/hero-console-v2.webp",
+  "siteAsset": "../../../../assets/media/hero-console-v2.webp",
+  "dimensions": {
+    "width": 1254,
+    "height": 1254
+  },
+  "validation": [
+    "no generated text",
+    "no logos or watermarks",
+    "safe square crop",
+    "WebP export verified",
+    "integrated on all four pages"
+  ]
+}

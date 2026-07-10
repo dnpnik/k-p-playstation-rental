@@ -43,8 +43,8 @@
         <a href="contacts.html" data-nav="contacts">Контакты</a>
       </nav>
       <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" data-menu-toggle><i></i><i></i></button>
-      <button class="nav-cta" type="button" data-open-modal>
-        <span>Забронировать</span><b>↗</b>
+      <button class="nav-cta" type="button" data-open-modal aria-label="Открыть форму бронирования">
+        <span>Забронировать</span><b aria-hidden="true">↗</b>
       </button>
     </header>
 
@@ -70,31 +70,15 @@
           </ul>
         </div>
 
-        <div class="hero-stage reveal reveal-delay" aria-label="PlayStation 5 и контроллер" data-glow>
+        <div class="hero-stage hero-stage-photo reveal reveal-delay" data-glow data-tilt>
+          <img class="hero-product-photo" src="assets/media/hero-console-v2.webp" alt="Игровая консоль и беспроводной контроллер в синем студийном свете" fetchpriority="high" decoding="async" />
           <div class="stage-grid" aria-hidden="true"></div>
           <div class="orbit orbit-a" aria-hidden="true"></div>
           <div class="orbit orbit-b" aria-hidden="true"></div>
           <div class="stage-label label-top"><span>READY</span><small>к игре за 5 минут</small></div>
-          <div class="stage-label label-side"><span>02</span><small>DualSense<br />в комплекте</small></div>
-          <div class="console" aria-hidden="true">
-            <div class="console-shadow"></div>
-            <div class="console-wing console-wing-left"></div>
-            <div class="console-core"></div>
-            <div class="console-wing console-wing-right"></div>
-            <div class="console-light"></div>
-            <div class="console-base"></div>
-          </div>
-          <div class="controller" aria-hidden="true">
-            <div class="controller-handle handle-left"></div>
-            <div class="controller-handle handle-right"></div>
-            <div class="controller-shell"></div>
-            <span class="d-pad">＋</span>
-            <span class="stick stick-one"></span>
-            <span class="stick stick-two"></span>
-            <span class="shape-buttons">△ ○<br />□ ×</span>
-            <span class="touchpad"></span>
-          </div>
+          <div class="stage-label label-side"><span>02</span><small>контроллера<br />в комплекте</small></div>
           <div class="stage-word" aria-hidden="true">PS5</div>
+          <div class="stage-live-mark" aria-hidden="true"><i></i><span>LIVE SET / 01</span></div>
           <div class="availability">
             <span class="availability-icon">✓</span>
             <p><b>Можно заказать сегодня</b><small>подтвердим время после заявки</small></p>
@@ -116,6 +100,45 @@
         </div>
       </section>
 
+      <section class="packages shell section-space" id="sets">
+        <header class="section-heading reveal">
+          <div><p class="eyebrow"><span>02</span> Комплекты</p><h2>Выберите<br /><em>уровень игры</em></h2></div>
+          <p>Никаких сложных настроек. Каждый вариант приезжает полностью готовым к запуску.</p>
+        </header>
+
+        <div class="package-grid">
+          <article class="package-card package-white reveal" data-glow data-tilt>
+            <div class="package-top"><span class="package-index">01</span><span class="package-tag">для двоих</span></div>
+            <div class="package-visual package-media"><img src="assets/media/hero-console-v2.webp" alt="Консоль и контроллер для базового комплекта" loading="lazy" decoding="async" /><span>DUO / READY</span></div>
+            <div class="package-content">
+              <p>Спокойный вечер дома</p><h3>Базовый</h3>
+              <ul><li>PlayStation 5</li><li>2 контроллера</li><li>Подборка игр</li></ul>
+              <button type="button" data-open-modal data-package="Базовый">Выбрать <span>→</span></button>
+            </div>
+          </article>
+
+          <article class="package-card package-blue reveal reveal-delay" data-glow data-tilt>
+            <div class="package-top"><span class="package-index">02</span><span class="package-tag">выбор компании</span></div>
+            <div class="package-visual package-media"><img src="assets/media/controllers.webp" alt="Игроки с контроллерами для комплекта Вечеринка" loading="lazy" decoding="async" /><span>PARTY / FOUR</span></div>
+            <div class="package-content">
+              <p>Для большой компании</p><h3>Вечеринка</h3>
+              <ul><li>PlayStation 5</li><li>4 контроллера</li><li>Игры для компании</li></ul>
+              <button type="button" data-open-modal data-package="Вечеринка">Выбрать <span>→</span></button>
+            </div>
+          </article>
+
+          <article class="package-card package-dark reveal reveal-delay-two" data-glow data-tilt>
+            <div class="package-top"><span class="package-index">03</span><span class="package-tag">полный комплект</span></div>
+            <div class="package-visual package-media"><img src="assets/media/game-night.webp" alt="Игровой вечер большой компании для комплекта Максимум" loading="lazy" decoding="async" /><span>MAX / WEEKEND</span></div>
+            <div class="package-content">
+              <p>Всё для игровых выходных</p><h3>Максимум</h3>
+              <ul><li>Консоль и экран</li><li>4 контроллера</li><li>Расширенная подборка</li></ul>
+              <button type="button" data-open-modal data-package="Максимум">Выбрать <span>→</span></button>
+            </div>
+          </article>
+        </div>
+      </section>
+
       <section class="cinematic-reel shell reveal" aria-label="Атмосфера игрового вечера" data-glow>
         <video class="reel-video" autoplay muted loop playsinline preload="metadata" poster="assets/media/game-night.webp" data-reel-video>
           <source src="assets/media/game-night-loop.mp4" type="video/mp4" />
@@ -127,48 +150,7 @@
           <p>Тот самый вечер, когда никто не смотрит на время.</p>
         </div>
         <button class="reel-control" type="button" aria-label="Приостановить видео" data-video-toggle><span>Ⅱ</span><small>Пауза</small></button>
-        <div class="reel-caption"><span>01:10</span><i></i><b>OMSK / NIGHT</b></div>
-      </section>
-
-      <section class="packages shell section-space" id="sets">
-        <header class="section-heading reveal">
-          <div><p class="eyebrow"><span>02</span> Комплекты</p><h2>Выберите<br /><em>уровень игры</em></h2></div>
-          <p>Никаких сложных настроек. Каждый вариант приезжает полностью готовым к запуску.</p>
-        </header>
-
-        <div class="package-grid">
-          <article class="package-card package-white reveal">
-            <div class="package-top"><span class="package-index">01</span><span class="package-tag">для двоих</span></div>
-            <div class="package-visual mini-visual-one" aria-hidden="true"><div class="mini-ps"><i></i><b></b><em></em></div></div>
-            <div class="package-content">
-              <p>Спокойный вечер дома</p><h3>Базовый</h3>
-              <ul><li>PlayStation 5</li><li>2 контроллера</li><li>Подборка игр</li></ul>
-              <button type="button" data-open-modal data-package="Базовый">Выбрать <span>→</span></button>
-            </div>
-          </article>
-
-          <article class="package-card package-blue reveal reveal-delay">
-            <div class="package-top"><span class="package-index">02</span><span class="package-tag">выбор компании</span></div>
-            <div class="package-visual mini-visual-two" aria-hidden="true"><div class="mini-pad"><i></i><i></i><b></b><em></em></div></div>
-            <div class="package-content">
-              <p>Для большой компании</p><h3>Вечеринка</h3>
-              <ul><li>PlayStation 5</li><li>4 контроллера</li><li>Игры для компании</li></ul>
-              <button type="button" data-open-modal data-package="Вечеринка">Выбрать <span>→</span></button>
-            </div>
-          </article>
-
-          <article class="package-card package-dark reveal reveal-delay-two">
-            <div class="package-top"><span class="package-index">03</span><span class="package-tag">полный комплект</span></div>
-            <div class="package-visual mini-visual-three" aria-hidden="true">
-              <span class="screen-one"></span><span class="screen-two"></span><span class="screen-glow"></span>
-            </div>
-            <div class="package-content">
-              <p>Всё для игровых выходных</p><h3>Максимум</h3>
-              <ul><li>Консоль и экран</li><li>4 контроллера</li><li>Расширенная подборка</li></ul>
-              <button type="button" data-open-modal data-package="Максимум">Выбрать <span>→</span></button>
-            </div>
-          </article>
-        </div>
+        <div class="reel-caption"><span data-video-time>00:00 / 00:10</span><i class="reel-progress"><b data-video-progress></b></i><strong>OMSK / NIGHT</strong></div>
       </section>
 
       <section class="media-story shell">
@@ -236,10 +218,10 @@
         <div class="night-copy">
           <p class="eyebrow"><span>05</span> Ваш сценарий</p>
           <h2>Один комплект.<br /><em>Много поводов.</em></h2>
-          <div class="scenario-tabs" role="tablist" aria-label="Сценарии аренды">
-            <button class="is-active" type="button" role="tab" aria-selected="true" data-scenario="friends">С друзьями</button>
-            <button type="button" role="tab" aria-selected="false" data-scenario="family">С семьёй</button>
-            <button type="button" role="tab" aria-selected="false" data-scenario="weekend">На выходные</button>
+          <div class="scenario-tabs" aria-label="Сценарии аренды">
+            <button class="is-active" type="button" aria-pressed="true" data-scenario="friends">С друзьями</button>
+            <button type="button" aria-pressed="false" data-scenario="family">С семьёй</button>
+            <button type="button" aria-pressed="false" data-scenario="weekend">На выходные</button>
           </div>
           <p class="scenario-copy" data-scenario-copy>Турнир, кооператив или просто громкий вечер — четыре контроллера не дадут никому скучать.</p>
           <button class="button button-light" type="button" data-open-modal>Собрать свой комплект <span>→</span></button>
@@ -305,7 +287,7 @@
     </dialog>
 
     <div class="toast" role="status" aria-live="polite">
-      <span>✓</span><p><b>Форма работает</b><small>Для реальных заявок нужно подключить канал отправки.</small></p>
+      <span>i</span><p><b>Демо-форма</b><small>Данные сохранены в форме, но пока не отправлены.</small></p>
     </div>
     <script src="script.js"></script>
   </body>
